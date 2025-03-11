@@ -5,7 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Grandes</title>
 </head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 500px;
+        border-collapse: collapse;    
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+        }
+    tfoot, thead{
+       background-color: gray;
+       color: white;  
+    }
+    td.num{
+        text-align: right;
+    }
+</style>
 <body>
-    
+    <table>
+        
+        <thead>
+           <tr>
+              <th scope="col">Estado</th>
+              <th scope="col" style="width: 50px;">População</th>
+           </tr>
+        </thead>
+        <body>
+           <tr>
+            <td >São Paulo</td>
+            <td class="num">45 973 194</td>
+           </tr>
+           <tr>
+               <td>Minas Gerais</td>
+               <td class="num">21 322 691</td>
+           </tr>
+           <tr>
+               <td>
+                Rio de Janeiro
+               </td>
+               <td class="num">
+                17 219 679
+               </td>
+           </tr>
+           <tr>
+               <td>
+                Bahia
+               </td>
+               <td class="num">
+                11 850 513
+               </td>
+           </tr>
+           <tr>
+            <td>
+                Paraná
+            </td>
+            <td class="num">
+                11 824 665
+            </td>
+           </tr>
+           <tr>
+            <td>
+                Rio Grande do Sul
+            </td>
+            <td class="num">
+                11 229 915
+            </td>
+           </tr>
+           <tr>
+            <td>Pernambuco</td>
+            <td class="num">9 539 029</td>
+           </tr>
+           <tr>
+            <td>Ceará</td>
+            <td class="num">9 233 656</td>
+           </tr>
+           <tr>
+                <td>
+                    Pará
+                </td>
+                <td class="num">
+                    8 664 306	
+                </td>
+           </tr>
+        </body>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num">0000000</td>
+        </tfoot>
+        <caption>População das unidades federativas</caption>
+    </table>
 </body>
 </html>
